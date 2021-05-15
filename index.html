@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta name="description" content="Korona Mıyım">
+        <meta name="keywords" content="korona aşı hasta hastalık belirti sağlık corona covid-19 covid19 covid hastane test online">
+        <meta name="author" content="Yasin Kamış"> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <title>Korona mıyım ?</title>
+    </head>
+    <body>
+        <nav>
+            <div class="logo-box">
+                <h1>.LOGO</h1>
+            </div>
+
+            <div class="menu-box">
+                <ul>
+                    <li><a href="#" class="aktive">Korona Mıyım ?</a></li>
+                    <li><a href="#">Belirtiler</a></li>
+                    <li><a href="#">Korunma Yolları</a></li>
+                    <li><a href="#">Covid-19 Tablosu</a></li>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <header id="particles-js">
+            <div class="header-content">
+                <h1>Korona Mıyım ?</h1>
+                <p>
+                    Sorusunun cevabını vermek için burdayız. Kendinde covid-19 belirtilerini görüyorsan kaydırıp teste başla.
+                    <span>Unutma! Sonuçlar sadece öneri niteliği taşımaktadır ve nihai bir sonuç/kesinlik içermemektedir, tavsiye niteliğindedir.</span>
+                </p>
+            </div>
+        </header>
+
+        <section class="section1">
+            <div class="test-box">
+                <div class="text">
+                    <h1>KORONA MIYIM ?</h1>
+                    <p>Soruları olabildiğince doğru yanıtlayarak gerçeğe yakın bir sonuç elde edebilirsiniz.</p>
+                </div>
+                <div class="form">
+                    <div class="temp-form">
+                        <div>
+                            <h4>İsminiz :   <span class="l-name"></span></h4>
+                            <h4>Yaşınız :   <span class="l-age"></span></h4>
+                            <h4>Cinsiyetiniz :   <span class="l-male"></span></h4>
+                        </div>
+                        <button class="guncelle button-s">Güncelle</button>
+                    </div>
+                    <div class="info-form">
+                        <form class="form-s" method="post">
+                            <h4>İsim</h4>
+                            <input class="isim" type="text">
+                            <h4>Doğum Yılı  (YYYY)</h4>
+                            <input class="doğumYılı" type="number" min="1920" max="2021"
+                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4">
+                            <h4>Cinsiyet</h4>
+                            <div class="checkbox-box">
+                                <input type="radio" name="male" class="e"><span>Erkek</span>
+                                <input type="radio" name="male" class="k"><span>Kadın</span>
+                            </div>
+                        </form>
+                        <button class="uygula button-s">Devam Et</button>
+                    </div>
+                    <div class="temp-form2">
+                        <div class="cor-line">
+                            <div class="skor">
+                                <h3><span class="soruNumarası">1</span>/ 20</h3>
+                            </div>
+                            <div class="bar-box">
+                                <div class="bar">
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ques-box">
+                            <h3 class="soruhavuzu">Ateşiniz 38 üstüne ne sıklıkla çıkıyor ?</h3>
+                            <i class="fas fa-shield-virus icon"></i>
+                            <div class="range">
+                                <input id="ran" type="range" min="0" max="5" value="0">
+                                <div class="ticks">
+                                  <span class="tick">0</span>
+                                  <span class="tick">1</span>
+                                  <span class="tick">2</span>
+                                  <span class="tick">3</span>
+                                  <span class="tick">4</span>
+                                  <span class="tick">5</span>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="back-line">
+                            <i class="fas fa-caret-square-left geri"></i>
+                            <i class="fas fa-check-square onay"></i>
+                            <button class="bittir button-s">Testi bittir</button>
+                        </div>
+                    </div>
+                    <div class="result">
+                        <h1>Testiniz Bitmiştir</h1>
+                        <h4>Unutma! Sonuçlar sadece öneri niteliği taşımaktadır ve nihai bir sonuç / kesinlik içermemektedir, tavsiye niteliğindedir.
+                        <h3 class="sonuc"></h3>
+                        </h4>
+                        <button class="tekrar button-s">Testi Tekrar Başlat</button>
+                    </div>
+                    <div class="test-form">
+                        <div>
+                            <h3>TESTE BAŞLAMAK İÇİN YANDAKİ FORMU DOLDURUNUZ</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section2">
+            <div class="table">
+                <div class="title">
+                    <h1>BELİRTİLER</h1>
+                    <p>Aşağıdaki belirtileri inceleyerek enfekte olup olmadığınız hakkında fikir sahibi olabilirsiniz.</p>
+                </div>
+                <div class="content">
+                    <div class="row-content">
+                        <div class="rare">
+                            <h1>Daha seyrek görülen semptomlar</h1>
+                            <p>Ağrı ve sızı</p>
+                            <p>Boğaz ağrısı</p>
+                            <p>Konjunktivit</p>
+                            <p>Baş ağrısı</p>
+                            <p>Tat alma veya koku duyusunun kaybı</p>
+                        </div>
+                        <div class="common">
+                            <h1>En yaygın semptomlar</h1>
+                            <p>Ateş</p>
+                            <p>Kuru öksürük</p>
+                            <p>Yorgunluk</p>
+                        </div>
+                        <div class="important">
+                            <h1>Ciddi semptomlar</h1>
+                            <p>Göğüs ağrısı veya göğüste baskı</p>
+                            <p>Solunum güçlüğü veya nefes darlığı</p>
+                            <p>Konuşma veya hareket kaybı</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section3">
+            <div class="content">
+                <h1>Korunma Yolları</h1>
+                <p>Ellerinizi sık sık temizleyin. Sabun, su veya alkol bazlı dezenfektan kullanın.</p>
+                <p>Öksüren veya hapşıran kişilerle aranızda güvenli mesafeyi koruyun.</p>
+                <p>Fiziksel mesafeyi koruyamadığınız durumlarda maske takın.</p>
+                <p>Gözlerinize, burnunuza veya ağzınıza dokunmayın.</p>
+                <p>Öksürürken veya hapşırırken burnunuzu ve ağzınızı dirseğinizin iç kısmıyla veya bir mendille kapatın.</p>
+                <p>Kendinizi iyi hissetmiyorsanız evde kalın.</p>
+                <p>Ateş, öksürük ve solunum güçlüğü şikayetleriniz varsa tıbbi yardım alı</p>
+            </div>
+            <div class="images">
+            </div>
+        </section>
+
+        <section class="section4">
+            <div class="card">
+                <div class="title">
+                    <h1>Bugün</h1>
+                </div>
+                <div class="info">
+                    <h1>SSSSS</h1>
+                    <P>123.123</P>
+                </div>
+                <div class="info">
+                    <h1>SSSSS</h1>
+                    <P>123.123</P>
+                </div>
+                <div class="info">
+                    <h1>SSSSS</h1>
+                    <P>123.123</P>
+                </div>
+                <div class="info">
+                    <h1>SSSSS</h1>
+                    <P>123.123</P>
+                </div>
+                <div class="info">
+                    <h1>SSSSS</h1>
+                    <P>123.123</P>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">
+                    <h1>Bu Hafta</h1>
+                </div>
+                <div class="info">
+                    <h1>SSSSS</h1>
+                    <P>123.123</P>
+                </div>
+                <div class="info">
+                    <h1>SSSSS</h1>
+                    <P>123.123</P>
+                </div>
+                <div class="info">
+                    <h1>SSSSS</h1>
+                    <P>123.123</P>
+                </div>
+                <div class="info">
+                    <h1>SSSSS</h1>
+                    <P>123.123</P>
+                </div>
+                <div class="info">
+                    <h1>SSSSS</h1>
+                    <P>123.123</P>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">
+                    <h1>Toplam</h1>
+                </div>
+                <div class="info">
+                    <h1>SSSSS</h1>
+                    <P>123.123</P>
+                </div>
+                <div class="info">
+                    <h1>SSSSS</h1>
+                    <P>123.123</P>
+                </div>
+                <div class="info">
+                    <h1>SSSSS</h1>
+                    <P>123.123</P>
+                </div>
+                <div class="info">
+                    <h1>SSSSS</h1>
+                    <P>123.123</P>
+                </div>
+                <div class="info">
+                    <h1>SSSSS</h1>
+                    <P>123.123</P>
+                </div>
+            </div>
+        </section>
+
+        <section class="section5">
+
+        </section>
+        <script src="https://kit.fontawesome.com/1893120878.js" crossorigin="anonymous"></script>
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
